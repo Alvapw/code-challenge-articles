@@ -1,0 +1,215 @@
+*, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.wrapper {
+  background-image: url("assets/img/front.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #13012E;
+  padding: 56% 0 0;
+}
+@media (min-width: 1000px) {
+  .wrapper {
+    padding: 10% 0 10%;
+    width: 100vw;
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+}
+.wrapper.article-one {
+  background-image: url("assets/img/article1.png");
+}
+.wrapper.article-two {
+  background-image: url("assets/img/article2.png");
+}
+.wrapper .navbar {
+  background-color: #13012E;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.wrapper .navbar .menu-main {
+  padding: 1rem 1.25rem;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .navbar .menu-main .navbar-logo {
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin-right: auto;
+}
+@media (min-width: 1000px) {
+  .wrapper .navbar .menu-main .navbar-logo {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 1000px) {
+  .wrapper .navbar .menu-main .menu-icon {
+    display: none;
+  }
+}
+.wrapper .navbar .menu-main .menu-icon.exit .line:first-child {
+  transform: rotate(45deg) translate(5px, 0px);
+}
+.wrapper .navbar .menu-main .menu-icon.exit .line:nth-child(2) {
+  display: none;
+}
+.wrapper .navbar .menu-main .menu-icon.exit .line:last-child {
+  transform: rotate(-45deg) translate(5px, 0px);
+}
+.wrapper .navbar .menu-main .menu-icon .line {
+  background-color: #FFFFFF;
+  width: 25px;
+  height: 2px;
+  display: block;
+  margin: 5px 0;
+  transition: 0.2s;
+}
+.wrapper .navbar .menu-main .menu-list {
+  list-style: none;
+  display: none;
+  flex: 0 0 100%;
+}
+@media (min-width: 1000px) {
+  .wrapper .navbar .menu-main .menu-list {
+    display: flex;
+    flex: 0 0 40%;
+    justify-content: space-between;
+  }
+}
+.wrapper .navbar .menu-main .menu-list.active {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+  align-content: center;
+}
+@media (min-width: 1000px) {
+  .wrapper .navbar .menu-main .menu-list.active {
+    height: initial;
+  }
+}
+.wrapper .navbar .menu-main .menu-list .menu-item {
+  flex: 0 0 100%;
+  text-align: center;
+  padding: 0.75rem;
+}
+@media (min-width: 1000px) {
+  .wrapper .navbar .menu-main .menu-list .menu-item {
+    padding: 0;
+    flex: 0 0 auto;
+  }
+}
+.wrapper .navbar .menu-main .menu-list .menu-item .menu-link {
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.wrapper .cards-section {
+  background-color: #F5F5F5;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.25rem;
+}
+@media (min-width: 1000px) {
+  .wrapper .cards-section {
+    justify-content: space-between;
+    padding: 2.5rem 1.25rem 6.25rem;
+  }
+}
+.wrapper .cards-section .card {
+  flex: 0 0 100%;
+  margin-bottom: 1.25rem;
+  background-color: #FFFFFF;
+  padding: 1.25rem;
+}
+@media (min-width: 1000px) {
+  .wrapper .cards-section .card {
+    flex: 0 0 32.5%;
+  }
+}
+.wrapper .article {
+  position: relative;
+  padding: 2.5rem 2.5rem 5rem;
+  background-color: #F5F5F5;
+  max-width: 1000px;
+  margin: auto;
+}
+@media (min-width: 1000px) {
+  .wrapper .article {
+    padding: 4rem 5.75rem;
+  }
+}
+.wrapper .article .icon-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.75rem;
+  background-color: rgb(33, 33, 33);
+}
+.wrapper .article .icon-box .material-icons {
+  display: block;
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+@media (min-width: 1000px) {
+  .wrapper .article .text-box {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.wrapper .article .text-box .text-column {
+  margin-top: 0.75rem;
+}
+.wrapper .article .text-box .text-column p {
+  font-size: 1rem;
+  color: #707070;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+.wrapper .article .text-box .text-column p.bold {
+  font-weight: 600;
+}
+.wrapper .article .text-box .text-column .img-box img {
+  display: block;
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  .wrapper .article .text-box .text-column {
+    flex: 0 0 48%;
+  }
+}
+
+.article-text .bigNumber {
+  font-size: 2.5rem;
+  color: #D6D6D6;
+  font-weight: 700;
+}
+.article-text h2 {
+  font-size: 1.25rem;
+}
+.article-text .greyP {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #707070;
+}/*# sourceMappingURL=style.css.map */
